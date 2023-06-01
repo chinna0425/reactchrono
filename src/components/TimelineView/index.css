@@ -1,0 +1,8 @@
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.main-inner-container {
+  width: 90%;
+}
