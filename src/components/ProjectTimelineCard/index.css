@@ -1,1 +1,89 @@
-/* Write your CSS here */
+.projectImage {
+  width: 100%;
+  border-radius: 3px;
+}
+.project-contianer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calendercontainer {
+  display: flex;
+  align-items: center;
+}
+.heading-title {
+  font-weight: 600;
+  font-family: 'Roboto';
+  font-size: 24px;
+  width: 75%;
+  color: #000000;
+}
+.calendersquare {
+  width: 18px;
+  height: 18px;
+}
+.spanduration {
+  color: #000000;
+  font-size: 13px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  margin-left: 5px;
+}
+.description-para {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 7px;
+}
+.anchorelement {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #0967d2;
+  text-decoration: none;
+}
+@media screen and (max-width: 567px) {
+  .heading-title {
+    font-weight: 600;
+    font-family: 'Roboto';
+    font-size: 18px;
+    width: 100%;
+  }
+  .description-para {
+    font-family: 'Roboto';
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 7px;
+  }
+  .project-contianer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+/* @media screen and (max-width: 325px) {
+  .heading-title {
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-size: 12px;
+    width: 65%;
+  }
+  .description-para {
+    font-family: 'Roboto';
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 7px;
+  }
+  .calendersquare {
+    width: 13px;
+    height: 13px;
+  }
+  .spanduration {
+    color: #000000;
+    font-size: 10px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-left: 2px;
+  }
+} */

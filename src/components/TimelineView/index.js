@@ -25,8 +25,8 @@ class TimelineView extends Component {
     return (
       <div className="main-container">
         <div className="main-inner-container">
-          <h1>MY JOURNEY OF</h1>
-          <h1>CCBP 4.O</h1>
+          <h1 className="main-heading">MY JOURNEY OF</h1>
+          <h1 className="main-heading1">CCBP 4.O</h1>
           <div>
             <Chrono items={items} mode="VERTICAL_ALTERNATING">
               {items.map(eachItemData => this.eachCardItem(eachItemData))}

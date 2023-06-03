@@ -3,24 +3,31 @@ import './index.css'
 
 const ProjectTimelineCard = props => {
   const {eachItem} = props
-  const {courseTitle, description, duration, tagsList, imageUrl} = eachItem
-  console.log(duration)
+  const {
+    categoryId,
+    description,
+    duration,
+    imageUrl,
+    projectTitle,
+    projectUrl,
+  } = eachItem
+
   return (
     <div>
       <div>
-        <img src={imageUrl} alt={courseTitle} />
-        <h1>{courseTitle}</h1>
-        <div>
-          <AiFillCalendar />
-          <span>{duration}</span>
+        <img src={imageUrl} alt={categoryId} className="projectImage" />
+      </div>
+      <div className="project-contianer">
+        <h1 className="heading-title">{projectTitle}</h1>
+        <div className="calendercontainer">
+          <AiFillCalendar className="calendersquare" />
+          <p className="spanduration">{duration}</p>
         </div>
       </div>
-      <p>{description}</p>
-      <div>
-        {tagsList.map(eachName => (
-          <p>{eachName.name}</p>
-        ))}
-      </div>
+      <p className="description-para">{description}</p>
+      <a href={projectUrl} className="anchorelement">
+        Visit
+      </a>
     </div>
   )
 }
